@@ -1,0 +1,25 @@
+.base {
+  inline-size: 6.4rem;
+  block-size: 6.4rem;
+  border-radius: 50%;
+  border: 2px solid var(--border-colour);
+  background-color: var(--background-colour);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple {
+  --border-colour: var(--purple);
+  --background-colour: var(--purple-light);
+}
+
+.orange {
+  --border-colour: var(--orange);
+  --background-colour: var(--orange-light);
+}
+
+.yellow {
+  --border-colour: var(--yellow);
+  --background-colour: var(--yellow-light);
+}

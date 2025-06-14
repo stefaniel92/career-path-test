@@ -1,0 +1,18 @@
+.base {
+  padding: 5rem;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  position: relative;
+  block-size: 100%;
+}
+
+.title {
+  margin-block-end: 1.2rem;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}

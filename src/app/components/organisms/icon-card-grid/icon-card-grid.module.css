@@ -1,0 +1,15 @@
+.base {
+  padding-block: 6.4rem;
+}
+
+.list {
+  display: grid;
+  column-gap: 10rem;
+  row-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-block-end: 4rem;
+}
+
+.bodyCopy {
+  line-height: 150%;
+}
