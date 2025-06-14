@@ -1,3 +1,7 @@
+.base {
+  padding-block-end: 10rem;
+}
+
 .wrapper {
   border: 1px solid var(--gray);
 }
@@ -5,4 +9,22 @@
 .progressBar {
   border-block-end: 1px solid var(--gray);
   padding: 3.2rem;
+}
+
+.mainTest {
+  padding-inline: 3.2rem;
+  padding-block: 6.4rem;
+}
+
+.list {
+  block-size: 40rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.question {
+  block-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,43 @@
+.questionNumber {
+  color: var(--orange);
+}
+
+.questionWrapper {
+  display: flex;
+  gap: 1.6rem;
+  margin-block-end: 3.2rem;
+}
+
+.intro {
+  display: block;
+}
+
+.question {
+  font-weight: 700;
+}
+
+.answers {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  gap: 5rem;
+  margin-block-end: 6.4rem;
+}
+
+.answerButton {
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  display: block;
+  position: relative;
+
+  &.selected {
+    background-color: blue;
+  }
+}
+
+.answerText {
+  opacity: 0;
+}
