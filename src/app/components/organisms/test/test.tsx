@@ -2,19 +2,19 @@
 import styles from "./test.module.css";
 import { JSX, useState } from "react";
 import { clsx } from "clsx";
-import { getCareerPathTestData } from "@/app/questions/questions";
+import { TCareerPathTest } from "@/app/questions/questions";
 import { ProgressBar } from "../../atoms/progress-bar/progress-bar";
 import { TestQuestion } from "../../molecules/test-question/test-question";
 
-export type TTest = {};
+export type TTest = {
+  careerTest: TCareerPathTest;
+};
 type TAnsweredQuestion = {
   id: string;
   answer: number;
 };
 
-const careerTest = await getCareerPathTestData("stef");
-
-export const Test = ({}: TTest): JSX.Element => {
+export const Test = ({ careerTest }: TTest): JSX.Element => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answeredQuestions, setAnsweredQuestions] = useState<
     TAnsweredQuestion[]

@@ -41,3 +41,5 @@ Given the time limit, I decided to focus my efforts on what I feel my strong sui
 8. Put the comment about reviewing your answers outside of each answer.
 
 9. Make sure the test doesn't break if you change your answers after filling in your last answer.
+
+10. Have a better loading state for when the API is connecting

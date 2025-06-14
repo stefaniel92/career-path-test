@@ -3,8 +3,10 @@ import { IconCardGrid } from "./components/organisms/icon-card-grid/icon-card-gr
 import { IconCardGridData } from "./components/organisms/icon-card-grid/icon-card-grid-data";
 import { Test } from "./components/organisms/test/test";
 import styles from "./page.module.css";
+import { getCareerPathTestData } from "./questions/questions";
 
 export default async function Home() {
+  const careerTest = await getCareerPathTestData("stef");
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -22,7 +24,7 @@ export default async function Home() {
           bodyCopy="We've analysed data from thousands of our members who work in graduate roles across a range of sectors to understand which personalities, skills and values best fit each career path.
 Take this test to understand what career path you might be suited to and how to get started."
         />
-        <Test />
+        {careerTest ? <Test careerTest={careerTest} /> : null}
       </main>
     </div>
   );
