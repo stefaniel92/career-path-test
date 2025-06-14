@@ -1,0 +1,29 @@
+.section {
+  position: relative;
+  min-block-size: 30rem;
+  background-color: #f5f7fa;
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-block-end: 1.6rem;
+  max-width: 50rem;
+}
+
+.titleWrapper {
+  margin-block-start: auto;
+  margin-block-end: 3.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
