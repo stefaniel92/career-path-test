@@ -63,7 +63,7 @@ export const Test = ({}: TTest): JSX.Element => {
                   currentQuestion={
                     currentQuestion < careerTest.questions.length
                       ? `#${careerTest.questions[currentQuestion].id}`
-                      : ""
+                      : "#"
                   }
                 />
               </li>
