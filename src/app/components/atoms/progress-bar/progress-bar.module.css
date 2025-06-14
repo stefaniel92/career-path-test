@@ -1,0 +1,25 @@
+.base {
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bar {
+  flex: 1 0 auto;
+  max-width: 20rem;
+  block-size: 2rem;
+  border-radius: 999px;
+  background-color: #eaecef;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    background-color: var(--blue);
+    inline-size: var(--percentage);
+    block-size: 100%;
+    border-radius: 999px;
+  }
+}
