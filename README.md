@@ -18,6 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 My notes:
 
+Added 18 June: Upon refelction, I should have made the test a <form> element, with each answer from 0-7 being a radio input that corresponded to each question.
+
 Given the time limit, I decided to focus my efforts on what I feel my strong suit is, which is semantic HTML and styling. Given more time, I would do the following (at minimum!):
 
 1. Of course, complete the test functionality with submitting the test, saving results, and deciding whether or not to show the test or the results based on whether or not the user, fetched from the query parameters, had previously submitted a test.
